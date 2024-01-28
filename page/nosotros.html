@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!--css-->
         <link rel="stylesheet" href="../css/style.css">
         <title>CHOCO ARTS</title>
@@ -16,93 +17,107 @@
 <body>
     <header>
         <!--  este es mi menu de navegacion  -->
-            <nav>
-                <ul>
-                    
-                    <li>
-                         <a href="./galeria.html">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="../index.html">
-                        <img src="../img/chocoarts-logo.png" alt="chocolates artesanales">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">Contacto</a>
-                    </li>
-                    <li><a href="./soporte.html">Soporte</a></li>
+        <nav class="navbar navbar-expand-lg  bg_nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="img_nav" src="../img/chocoarts-logo.png" alt="chocolates artesanales">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./soporte.html" >Soporte</a>
+                  </li>
                 </ul>
-            </nav>
+               
+              </div>
+            </div>
+          </nav>
+
     </header>
     <main>
 
         <section>
-            <article>
-                <h1 class="titulo1">Nosotros</h1>
-                <img class="image-home" src="../img/7.jpg" alt="personal de cocina preparando el chocolate">
-            </article>
-            <article>
-                <h2>Bienvenidos a Choco Arts </h2>
-                <p>
-                    En Choco Arts, no solo creamos chocolates artesanales, sino que también tejemos historias de indulgencia y pasión por el cacao. Nuestra travesía comienza con la búsqueda de la perfección chocolatera, llevándonos a explorar los rincones más exquisitos del mundo del chocolate.
-                </p>
-            </article>
-            <article>
-                <h2>Nuestra Historia </h2>
-                <p>
-                    Hace 13 años, comenzamos este viaje como amantes del chocolate con un sueño: ofrecer a nuestros clientes experiencias gastronómicas inolvidables. Desde entonces, cada creación en [Nombre de la Chocolatería] ha sido el resultado de la dedicación, la artesanía y el amor por los sabores ricos y auténticos.
+            <div>
+                <div>
+                    <h1 class="titulo1">Nosotros</h1>
+                    <img class="image-home" src="../img/7.jpg" alt="personal de cocina preparando el chocolate">
+                </div>
+                <article class="nst_home">
+                    <h2>Bienvenidos a Choco Arts </h2>
+                    <p>
+                        En Choco Arts, no solo creamos chocolates artesanales, sino que también tejemos historias de indulgencia y pasión por el cacao. Nuestra travesía comienza con la búsqueda de la perfección chocolatera, llevándonos a explorar los rincones más exquisitos del mundo del chocolate.
+                    </p>
+                </article>
+            </div>
 
-
-                </p>
-            </article>
-            <article>
-                <h2>Artesania con Pasion </h2>
-                <p>
-
-                    Cada bombón, cada barra y cada torta que sale de nuestro taller es una obra maestra cuidadosamente elaborada. Nos enorgullece utilizar ingredientes de la más alta calidad, desde el cacao fino hasta los rellenos más exquisitos, para ofrecerte una indulgencia única en cada bocado.
-
-                </p>
-            </article>
-            <article>
-                <h2>Compromiso </h2>
-                <p>
-                    En Choco Arts, no solo nos preocupamos por la calidad, sino también por el impacto ambiental. Nos esforzamos por obtener nuestros ingredientes de manera sostenible y contribuir positivamente a las comunidades de cacao.
-
-                </p>
-            </article>
-            <article>
-                <h2>Nuestra mision </h2>
-                <p>
-                    Nuestra misión es simple pero poderosa: llevar la alegría del chocolate artesanal a cada rincón. Buscamos crear momentos especiales y transformar los placeres cotidianos en experiencias extraordinarias.
-                    <br>
-                    Gracias por acompañarnos en este viaje de sabores y emociones. Te invitamos a explorar nuestras creaciones y ser parte de nuestra historia en [Nombre de la Chocolatería].
-                    <br>
-                    ¡Haz que cada día sea un festín chocolatero!
-                </p>
-            </article>
-        </section>
-
-        <section>   
-           <div>
-            <h3>Ubicacion</h3>
-            <p>Encontranos en nuestra sede oficial o contactanos <a href="./contacto.html">AQUI</a></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!4v1702248242231!6m8!1m7!1sW_Xu-KW6wYiJImCqRC9hQw!2m2!1d-31.4444604645137!2d-62.07050389943459!3f104.62854779714134!4f-4.5478794567311525!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-        </article>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button form_header " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Nuestra Historia
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg_form ">
+                        <strong>Nuestra Historia comienza hace 13 años.</strong> comenzamos este viaje como amantes del chocolate con un sueño: ofrecer a nuestros clientes experiencias gastronómicas inolvidables. Desde entonces, cada creación en [Nombre de la Chocolatería] ha sido el resultado de la dedicación, la artesanía y el amor por los sabores ricos y auténticos.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed form_header " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Artesania con Pasion
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg_form ">
+                        Cada bombón, cada barra y cada torta que sale de nuestro taller es una obra maestra cuidadosamente elaborada. Nos enorgullece utilizar ingredientes de la más alta calidad, desde el cacao fino hasta los rellenos más exquisitos, para ofrecerte una indulgencia única en cada bocado.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item ">
+                  <h2 class="accordion-header ">
+                    <button class="accordion-button collapsed  form_header " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Compromiso
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg_form ">
+                        En Choco Arts, no solo nos preocupamos por la calidad, sino también por el impacto ambiental. Nos esforzamos por obtener nuestros ingredientes de manera sostenible y contribuir positivamente a las comunidades de cacao.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed form_header " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Nuestra mision
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body   bg_form ">
+                        <strong> Nuestra misión es simple pero poderosa:</strong> llevar la alegría del chocolate artesanal a cada rincón. Buscamos crear momentos especiales y transformar los placeres cotidianos en experiencias extraordinarias.
+                        <br>
+                        Gracias por acompañarnos en este viaje de sabores y emociones. Te invitamos a explorar nuestras creaciones y ser parte de nuestra historia en Choco Arts.
+                        <br>
+                        ¡Haz que cada día sea un festín chocolatero!                      </div>
+                    </div>
+                  </div>
+            
         </section>
         
- <!--no existe la pagina asi que solo deje el link en blanco-->
-        <div>
 
-            <a href="">
-                <img class="imglc" src="../img/face.webp" alt="facebook">
-            </a>
-
-            <a href="">
-                <img class="imglc" src="../img/x.png" alt="Twitter">
-                
-            </a>
-
-        </div>
 
     </main>
     
@@ -116,6 +131,8 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
 </body>
 </html>
