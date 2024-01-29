@@ -1,0 +1,17 @@
+//reset
+@import 'reset/vars';
+@import 'reset/mixin';
+@import 'reset/reset';
+
+
+//estructura principal
+@import 'grid';
+@import 'header';
+@import 'principal';
+@import 'footer';
+
+//mediaq
+@import 'mediaq';
+
+//bootstrap
+@import'bootstrap';

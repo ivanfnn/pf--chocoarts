@@ -1,0 +1,53 @@
+//variables
+
+
+//colors
+$color-primary:#AD343E;
+$color-secondary:#F2AF29;
+$color-tertiary:#5688C7;
+$color-quaternary:#12263A;
+$color-quinary: #ec9576;
+$color-footer: #C6CAED;
+$btn-color1:#5DD9C1;
+$btn-color2: #ADF7B6;
+$btn-color-h1:#587D71;
+$btn-color-h2:#4DAA57;
+
+
+//tipografia
+
+
+$font-body: 'Roboto Mono', monospace;
+$font-tittle1:'Roboto Condensed', sans-serif;
+$font-tittle2:'Roboto', sans-serif;
+
+
+//maps
+
+
+$bg: (
+    primary:#AD343E,
+    secondary:#F2AF29,
+    tertiary:#5688C7,
+    quaternary:#12263A,
+    quinary: #ec9576,
+    foot: #C6CAED,
+);
+
+$btn-bg: (
+    $btn-color1:#5DD9C1,
+    $btn-color2: #ADF7B6,
+    $btn-color-h1:#587D71,
+    $btn-color-h2:#4DAA57,
+
+);
+
+//each
+@each $clrs, $value in $bg{
+     .link-nav#{$clrs}
+        :hover{
+        box-shadow: 2px 2px 2px $value;
+     }
+    }
+
+

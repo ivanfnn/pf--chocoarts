@@ -1,0 +1,41 @@
+//declarar----- importar
+//@mixin ----- @include
+
+@mixin size($m,$p){
+    margin: $m;
+    padding: $p;
+}
+@mixin proportions($w,$h){
+    width: $w;
+    height: $h;
+}
+@mixin flex-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+@mixin center{
+    justify-content: center;
+    align-items: center;
+}
+@mixin card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-right: 5px;
+    padding: 5px;
+    overflow: hidden;
+}
+@mixin tittle1 {
+    font-family: $font-tittle1;
+    font-size: 40px;
+}
+@mixin tittle2 {
+    font-family: $font-tittle2;
+    font-size: 40px;
+}

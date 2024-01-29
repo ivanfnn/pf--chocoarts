@@ -1,0 +1,12 @@
+/*grilla*/
+.container--grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.1fr 0.7fr 1fr 0.1fr;
+    grid-template-areas: 
+    "header header header header header"
+    "main main main main main"
+    "main main main main main"
+    "footer footer footer footer footer"
+    ;
+}

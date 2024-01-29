@@ -1,0 +1,26 @@
+/*footer*/
+footer{
+   
+    grid-area: footer;   
+    background-color: map-get($bg , primary );
+    width: auto;
+   
+}
+   .text-footer{
+       text-align: center;
+       padding: 10px;
+   }
+   
+   .img-footer{
+    @include size (0,10px);
+       height: 60px;
+   }
+   .contenedor-footer{
+       display: flex;
+       justify-content: space-between;
+       @include proportions(100%,100%);
+       align-items: center;
+       overflow: hidden;
+       
+   }
+   

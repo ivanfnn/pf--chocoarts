@@ -1,0 +1,31 @@
+/*header*/
+header{
+
+    grid-area: header;
+
+}
+/*nav*/
+
+.nav{
+        &--bg{
+            background-color: $color-primary;
+            width: 100%;
+            justify-content: space-between;
+        }
+        &--img{
+            height: 60px;
+            border-radius: 2px;
+            border: 2px solid #000000;
+        }
+        &--b{
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            @include size (0,0);
+        }
+
+
+}
+

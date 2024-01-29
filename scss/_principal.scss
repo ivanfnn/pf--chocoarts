@@ -1,0 +1,232 @@
+
+
+
+
+
+
+
+main{
+        grid-area: main;
+    div{
+            ul{
+                list-style-type: none;
+            }        
+
+
+        }
+    }
+h1{
+    @include tittle2;
+   
+}
+h3{
+    @include tittle1;
+}
+.container{
+    width: 100%;
+    background-color: map-get($bg , foot ); 
+}
+
+.c{
+
+        &--d1{
+            background-color: $color-secondary;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 3px solid #000000;
+            margin-left: 3px;
+            margin-right: 5px;
+            padding: 5px;
+            overflow: hidden;
+            }
+        &--d2{
+            background-color: $color-secondary;
+            overflow: hidden;
+            @include flex-center;
+            margin: 10px 5px 10px 5px;
+            padding: 3px;
+        }
+        &--s{
+            @include flex-center;
+            background-color:$color-tertiary;
+            border-radius: 5px;
+            border: 3px solid $color-quaternary ;
+            padding: 10px;
+            margin-left: 2px;
+            overflow: hidden;
+        }
+
+}
+
+.img{
+        &--home{
+            width: 100%;
+
+        }
+        &--support{
+            width: 50%;
+        }
+        &--galeria{
+            @include proportions(100%,100%)   
+        }
+
+
+}
+.container--grid{
+    background-color: map-get($bg ,quaternary );
+}
+
+.cont{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px;
+        grid-gap: 20px ;
+        padding: 100px 0;
+        overflow: hidden;
+
+        &--iframe{
+            width: 100%;
+            margin-left: 5px;
+            margin-top: 15px;
+            margin-right: 5px;
+        }
+        &--tittle{
+            margin: 10px;
+            box-shadow: 10px 10px 10px hsl(0, 0%, 0%);
+            border-radius: 17px;
+            border: 2px solid black;
+        }
+        &--form{
+            background-color: #ff7f50;
+            @include center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 3px solid #000000;
+            margin-left: 3px;
+            margin-right: 5px;
+            padding: 5px;
+            overflow: hidden;
+        &--nts{
+            overflow: hidden;
+            max-width: 1000px;
+            background-color: map-get($bg , foot ); 
+        }
+        }
+        &--supp{
+            overflow: hidden;
+             background-color: map-get($bg , foot ); 
+        }
+}
+
+.bgb{
+    background-color: map-get($bg , foot ); 
+}
+
+/*support*/
+.sc{
+   
+    background-color: $color-quinary;
+    border-radius: 5px;
+    border: 3px solid #000000;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+.imglc{
+    height: 35px;
+}
+
+.enlace-form{
+    color: #ff0000;
+}
+
+.text-support{
+color: #f0ffff;
+    background-color: #000000;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*galeria*/
+.titulo1{
+    margin-top: 10px;
+    background-color: map-get($bg , tertiary );
+    color: #000000;
+    text-align: center;
+}
+.cg{
+    background-color: #ec9576;
+}
+.box_img{
+    
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+/* contacto*/
+/*main*/
+
+.home--contacto{
+    background-color: map-get($bg, tertiary );
+    flex-direction: column-reverse;
+    border: 3px solid $color-quaternary;
+    @include card;
+}
+.ubi{
+    background-color: map-get($bg, tertiary );
+    @include flex-center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 3px solid $color-quaternary;
+    margin-left: 3px;
+    margin-right: 5px;
+    padding: 5px;
+    overflow: hidden;
+}
+.red{
+    background-color: map-get($bg, tertiary );
+    flex-direction: space-between ;
+    border: 3px solid $color-quaternary;
+   @include card;
+}
+.form--tittle{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*NOSOTROS*/
+/*main*/
+
+.home--nts{
+    background-color: map-get($bg, secondary);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 3px solid #000000;
+    margin-left: 3px;
+    margin-right: 5px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.acordion{
+        &--header{
+            background-color:$color-tertiary;
+            box-shadow: 5px 5px 5px $color-quaternary;
+        }
+        &--bg{
+            background-color: $color-quinary;
+        }   
+}
+
