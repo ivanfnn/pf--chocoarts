@@ -104,7 +104,8 @@ main{
             border: 2px solid #000000;
         }
         &--form{
-            background-color: map-get($bg2, quinary );
+            color: #ffffff;
+            background-color: map-get($bg, primary );
             @include center;
             margin-top: 20px;
             margin-bottom: 20px;

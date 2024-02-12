@@ -170,7 +170,8 @@ main div ul {
   border: 2px solid #000000;
 }
 .cont--form {
-  background-color: #707070;
+  color: #ffffff;
+  background-color: #AD343E;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
