@@ -8,14 +8,22 @@ header{
 
 .nav{
         &--bg{
-            background-color: $color-primary;
+            background-image: linear-gradient(to bottom, $color-four, $color-one,$color-three );
+            /*background-color: map-get($bg2 , primary );*/
+            opacity: 0.9;
             width: 100%;
             justify-content: space-between;
         }
         &--img{
             height: 60px;
+            margin: 20px;
             border-radius: 2px;
             border: 2px solid #000000;
+            transition: all 0.5s ease-in;
+            &:hover{
+                transform: scale(1.5);
+                opacity: 0.7;
+            }
         }
         &--b{
             display: flex;

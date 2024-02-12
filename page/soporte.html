@@ -4,11 +4,30 @@
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--meta description-->
+        <meta name="description" content="Bienvenido al Centro de Soporte de Choco Arts.
+         Tu satisfacción es nuestra prioridad.
+         Encuentra respuestas en nuestra Base de Conocimientos, completa nuestro formulario de contacto para obtener ayuda personalizada.
+         En Choco Arts, estamos aquí para asegurarnos de que tu experiencia chocolatera sea excepcional.">
+        <!--meta keywords-->
+        <meta name="keywords" content="Choco Arts, centro de soporte, soporte técnico, bases de conocimientos, formulario de contacto, satisfacción del cliente, chocolates, delicias de chocolate, servicio al cliente, experiencia chocolatera, ayuda personalizada, San Francisco, Córdoba, Argentina">
+        <!--Opengraph-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Choco Arts - Soporte">
+        <meta property="og:url" content="https://ivanfnn.github.io/pf--chocoarts/page/soporte.html">
+        <meta property="og:image" content="https://github.com/ivanfnn/pf--chocoarts/blob/main/img/chocoarts-logo.png">
+        <meta property="og:description" content="Explora el Centro de Soporte de Choco Arts, donde tu satisfacción es nuestra prioridad.
+         Encuentra respuestas en nuestra Base de Conocimientos y completa nuestro formulario de contacto para obtener ayuda personalizada.
+          Estamos aquí para asegurarnos de que tu experiencia chocolatera sea excepcional.">
         <!--bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!--animaciones-->
+        <!--aos-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--animate-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <!--css-->
         <link rel="stylesheet" href="../css/main.css">
-        <title>CHOCO ARTS</title>
         <!--fontfamily-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +38,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    
+        <!--tittle-->
+        <title>CHOCO ARTS- Soporte</title>
     </head>
     <body>
         <div class="cont--supp">
@@ -28,7 +48,7 @@
                 <nav class="navbar navbar-expand-lg  nav--bg">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="../index.html">
-                            <img class="nav--img" src="../img/chocoarts-logo.png" alt="chocolates artesanales">
+                            <img class="nav--img animate__animated animate__pulse" src="../img/chocoarts-logo.png" alt="chocolates artesanales">
                         </a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,16 +56,16 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link link-navfoot" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            <a class="link--nav  nav-link link-navfoot" aria-current="page" href="./nosotros.html">Nosotros</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link link-navfoot" href="./galeria.html">Galeria</a>
+                            <a class="link--nav  nav-link link-navfoot" href="./galeria.html">Galeria</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link link-navfoot" href="./contacto.html">Contacto</a>
+                            <a class="link--nav  nav-link link-navfoot" href="./contacto.html">Contacto</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link disable link-navfoot" href="./soporte.html" >Soporte</a>
+                            <a class="link--nav  nav-link disable link-navfoot" href="./soporte.html" >Soporte</a>
                           </li>
                         </ul>
                        
@@ -59,8 +79,8 @@
                     <img class="img--support  col-lg-12 col-md-12 col-sm-6 col-xs-12 " src="../img/tecnico_soporte_informatico.jpg" alt="Soporte Tecnico">
 
                     <div>
-                        <h1>¡Bienvenido a Nuestro Centro de Soporte!</h1>
-                        <p>
+                        <h1 class="title" >¡Bienvenido a Nuestro Centro de Soporte!</h1>
+                        <p class="text" >
                             En Nombre de nuestra Empresa, tu satisfacción es nuestra máxima prioridad. Estamos aquí para asegurarnos de que tu experiencia chocolatera sea tan excepcional como nuestros deliciosos productos. Si necesitas ayuda, tenemos varias opciones para brindarte el soporte que mereces.
                         </p>
                     </div>
@@ -68,7 +88,7 @@
             <main class="row">
 
                 <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">  
-                    <div class="card bc col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                    <div class="card bc col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="flip-up" >
                         <div class="card-header">
                         Bases de conocimientos
                         </div>
@@ -85,7 +105,7 @@
 
 
                     
-                      <div class="card bc col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                      <div class="card bc col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="flip-up">
                           <div class="card-header">
                             Formulario de Contacto
                           </div>
@@ -101,7 +121,7 @@
 
                   <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
 
-                        <p class="text-support">
+                        <p class="text--support">
                             En Choco Arts, nuestro compromiso va más allá de la creación de chocolates excepcionales; nos esforzamos por brindarte un servicio igualmente excepcional. Gracias por elegirnos para endulzar tus momentos especiales.
 
                             ¡Que tus experiencias chocolateras sean siempre deliciosas!
@@ -112,11 +132,11 @@
             </main>
 
             <footer class="row">
-                <div class="contenedor-footer col-lg-12 col-md-12 col-sm-12 col-xs-12"" >
+                <div class="contenedor--footer col-lg-12 col-md-12 col-sm-12 col-xs-12"" >
                                 
-                    <p class="text-footer">© 2010 Choco Arts. Todos los derechos reservados. </p>
+                    <p class="text--footer">© 2010 Choco Arts. Todos los derechos reservados. </p>
             
-                    <img class="img-footer" src="../img/chocoarts-logo.png" alt="chocolates artesanales">
+                    <img class="img--footer" src="../img/chocoarts-logo.png" alt="chocolates artesanales">
 
                 </div>
 
@@ -125,7 +145,11 @@
         </div>
 
 
-         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    </body>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+              AOS.init();
+        </script>
+  </body>
 </html>

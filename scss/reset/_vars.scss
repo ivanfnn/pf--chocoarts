@@ -8,14 +8,23 @@ $color-tertiary:#5688C7;
 $color-quaternary:#12263A;
 $color-quinary: #ec9576;
 $color-footer: #C6CAED;
+$color-one:#886a4a;
+$color-two:#000000;
+$color-three:#37363d;
+$color-four:#e3874f;
+$color-five:#707070;
+$color-six:#5f605d;
 $btn-color1:#5DD9C1;
 $btn-color2: #ADF7B6;
 $btn-color-h1:#587D71;
 $btn-color-h2:#4DAA57;
+$btn-color3:#14213d;
+$btn-color4: #FCA311;
+$btn-color-h3:#ffffff;
+$btn-color-h4:#e5e5e5;
 
 
 //tipografia
-
 
 $font-body: 'Roboto Mono', monospace;
 $font-tittle1:'Roboto Condensed', sans-serif;
@@ -24,6 +33,23 @@ $font-tittle2:'Roboto', sans-serif;
 
 //maps
 
+
+$bg2: (
+    primary:#886a4a,
+    secondary:#000000,
+    tertiary:#37363d,
+    quaternary:#e3874f,
+    quinary: #707070,
+    foot: #5f605d,
+);
+
+$btn-bg2: (
+    $btn-color1:#14213d,
+    $btn-color2:#FCA311,
+    $btn-color-h1: #ffffff,
+    $btn-color-h2:#e5e5e5,
+
+);
 
 $bg: (
     primary:#AD343E,
@@ -46,7 +72,7 @@ $btn-bg: (
 @each $clrs, $value in $bg{
      .link-nav#{$clrs}
         :hover{
-        box-shadow: 2px 2px 2px $value;
+        box-shadow: 5px 5px 5px $value;
      }
     }
 

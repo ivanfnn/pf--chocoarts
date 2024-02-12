@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 main{
         grid-area: main;
     div{
@@ -15,24 +10,19 @@ main{
 
         }
     }
-h1{
-    @include tittle2;
-   
-}
-h3{
-    @include tittle1;
-}
 .container{
     width: 100%;
-    background-color: map-get($bg , foot ); 
+    background-color: map-get($bg2 , tertiary ); 
 }
 
 .c{
 
         &--d1{
-            background-color: $color-secondary;
+            background-image: linear-gradient(to bottom ,$color-four,$color-one);
+            opacity: 0.9;
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: space-around;
             align-items: center;
             margin-top: 20px;
             margin-bottom: 20px;
@@ -42,70 +32,79 @@ h3{
             margin-right: 5px;
             padding: 5px;
             overflow: hidden;
+            width: fit-content;
             }
         &--d2{
-            background-color: $color-secondary;
+            background-image: linear-gradient(to top,$color-four,$color-one);
+            opacity: 0.9;
             overflow: hidden;
             @include flex-center;
             margin: 10px 5px 10px 5px;
             padding: 3px;
+            width: fit-content;
         }
         &--s{
             @include flex-center;
-            background-color:$color-tertiary;
-            border-radius: 5px;
-            border: 3px solid $color-quaternary ;
+            background-image: linear-gradient(to bottom,$color-quaternary, $color-three);
+            opacity: 0.9;
+            background-color:$color-quaternary;
+            border-radius: 7px;
             padding: 10px;
             margin-left: 2px;
+            margin-right: 2px;
             overflow: hidden;
+            width: fit-content;
         }
 
 }
 
+.iframe--index{
+    width:100%;
+    height: 315px; 
+}
+
 .img{
         &--home{
-            width: 100%;
-
+            width: 70%;
         }
         &--support{
             width: 50%;
         }
         &--galeria{
             @include proportions(100%,100%);
-            object-fit: cover;
-              
+            object-fit: cover; 
+            border-radius: 22px;    
         }
-
-
+        &--redes{
+            margin-bottom: 10px;
+        }
 }
 .container--grid{
     background-color: map-get($bg ,quaternary );
 }
-
 .cont{
        &--galery{
+            background-color: $color-two;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-auto-rows: auto;
             grid-gap: 10px ;
-            padding: 20px;
-            
+            padding: 20px;    
         }
 
         &--iframe{
             width: 100%;
-            margin-left: 5px;
             margin-top: 15px;
-            margin-right: 5px;
         }
         &--tittle{
             margin: 10px;
-            box-shadow: 10px 10px 10px hsl(0, 0%, 0%);
+            padding: 10px;
+            box-shadow: 5px 5px 5px #808080;
             border-radius: 17px;
-            border: 2px solid black;
+            border: 2px solid #000000;
         }
         &--form{
-            background-color: #ff7f50;
+            background-color: map-get($bg2, quinary );
             @include center;
             margin-top: 20px;
             margin-bottom: 20px;
@@ -115,28 +114,29 @@ h3{
             margin-right: 5px;
             padding: 5px;
             overflow: hidden;
-        &--nts{
-            overflow: hidden;
-            max-width: 1000px;
-            background-color: map-get($bg , foot ); 
-        }
         }
         &--supp{
             overflow: hidden;
-             background-color: map-get($bg , foot ); 
+            background-color: map-get($bg2 , secondary ); 
+        }
+        &--nts{
+            background-color: $color-two;
         }
 }
-
-.bgb{
-    background-color: map-get($bg , foot ); 
+.bg{
+    &--contact{
+        background-color: map-get($bg ,  quaternary );
+        overflow: hidden;
+    }
+    &--galery{
+        background-color: $color-two;
+    }
 }
-
 /*support*/
 .sc{
-   
-    background-color: $color-quinary;
+    color: $color-four;
     border-radius: 5px;
-    border: 3px solid #000000;
+    border: 3px solid #090909;
     overflow: hidden;
     padding-top: 15px;
 }
@@ -148,24 +148,63 @@ h3{
 .enlace-form{
     color: #ff0000;
 }
-
-.text-support{
-color: #f0ffff;
+.form--tittle{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.tittle{
+    @include tittle;
+    opacity: 1;
+    &--galery{
+        margin-top: 10px;
+        color: $color-footer;
+        text-align: center;
+    }
+    &--nts{
+        margin-top: 10px;
+        color: $color-footer;
+        text-align: center;
+    }
+    &--contacto{
+        color: $btn-color-h3;
+        margin-left: 5px;
+    }
+}
+.subtittle{
+    @include subtittle;
+    opacity: 1;
+    &--styles{
+        color: #ffffff
+    }
+    &--formcontact{
+        color: $btn-color-h3;
+    }
+}
+.text{
+    @include text;
+    opacity: 1;
+    padding-left: 5px;
+    &--support{
+    color: #ffffff;
     background-color: #000000;
+    padding-left: 5px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-}
-/*galeria*/
-.titulo1{
-    margin-top: 10px;
-    background-color: map-get($bg , tertiary );
-    color: #000000;
-    text-align: center;
+    }
+    &--styles{
+        color: #ffffff;
+    }
+    &--formcontact{
+        color: $btn-color-h3;
+    }
 }
 .cg{
     background-color: #ec9576;
 }
 .box--img{
+    padding: 0;
+    transition: all 0.3s ease-in;
+    transition-delay: 0.2s;
     &:nth-child(1){
         grid-column-start: span 2;
     }
@@ -189,59 +228,61 @@ color: #f0ffff;
         grid-column-start: span 2;
         grid-row-start: span 2;
     }
-
+    &:hover{
+        border-radius: 20px;
+        border: #ffffff solid 3px;
+        box-shadow: #ffffff 10px 10px 10px;
+        transform: scale(1.05);
+    }
 }
 /* contacto*/
 /*main*/
-
-.home--contacto{
-    background-color: map-get($bg, tertiary );
-    flex-direction: column-reverse;
-    border: 3px solid $color-quaternary;
-    @include card;
+.home{
+    &--contacto{
+        background-image: linear-gradient(to bottom,$color-footer,$color-tertiary, $color-quaternary);
+        flex-direction: column-reverse;
+        border: 3px solid $color-quaternary;
+        @include card;    
+    }
+    &--nts{
+        background-image: linear-gradient(to top,$color-four,$color-one);
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 3px solid #000000;
+        margin-left: 3px;
+        margin-right: 5px;
+        padding: 5px;
+        overflow: hidden;
+    }
 }
-.ubi{
-    background-color: map-get($bg, tertiary );
-    @include flex-center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 3px solid $color-quaternary;
-    margin-left: 3px;
-    margin-right: 5px;
-    padding: 5px;
-    overflow: hidden;
-}
-.red{
-    background-color: map-get($bg, tertiary );
-    flex-direction: space-between ;
-    border: 3px solid $color-quaternary;
-   @include card;
-}
-.form--tittle{
-    margin-left: 5px;
-    margin-right: 5px;
+.card{
+    &--ubi{
+        background-image: linear-gradient(to bottom,$color-footer,$color-tertiary, $color-quaternary);
+        @include flex-center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 3px solid $color-quaternary;
+        margin-left: 3px;
+        margin-right: 5px;
+        padding: 5px;
+        overflow: hidden;
+    }
+    &--red{
+        background-image: linear-gradient(to bottom,$color-footer,$color-tertiary, $color-quaternary);
+        border: 3px solid $color-quaternary;
+        flex-wrap: wrap;
+       @include card;
+    }
 }
 
 /*NOSOTROS*/
 /*main*/
-
-.home--nts{
-    background-color: map-get($bg, secondary);
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 3px solid #000000;
-    margin-left: 3px;
-    margin-right: 5px;
-    padding: 5px;
-    overflow: hidden;
-}
-
 .acordion{
         &--header{
             background-color:$color-tertiary;
@@ -251,4 +292,20 @@ color: #f0ffff;
             background-color: $color-quinary;
         }   
 }
+.link{
+    &--redes{
+    @include size(25px, 25px);
+    text-decoration: none;
+     padding: 10px;
+    }
+    &--img{
+        padding: 2px;
+        transition: all 0.5s ease;
+        transition-delay: 0.3s;
+        &:hover{
+            box-shadow: #000000 7px 7px 7px;
+            transform: scale(2);
+            }
 
+    }
+}
