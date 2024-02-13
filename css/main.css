@@ -132,6 +132,7 @@ main div ul {
 
 .img--home {
   width: 70%;
+  border-radius: 20px;
 }
 .img--support {
   width: 50%;
